@@ -1,69 +1,46 @@
-import React from "react";
 
-const Home = () => {
+function Home() {
   return (
-    <main>
-
-      {/* Hero Section */}
+    <>
       <section className="hero" id="home">
         <div className="hero-content">
-
-          <p className="hero-subtitle">CLEAN • RELIABLE • AFFORDABLE</p>
+          <p className="subtitle">
+            CLEAN • RELIABLE • AFFORDABLE
+          </p>
 
           <h1>
-            Power Your Future
-            <span> With Solar Energy</span>
+            Power Your Future With Solar Energy
           </h1>
 
-          <p className="hero-text">
-            We provide reliable solar energy solutions for homes,
-            businesses, and organizations. Enjoy clean and affordable
-            electricity with our professional solar installation services.
+          <p>
+            We provide reliable solar installation
+            solutions for homes and businesses.
+            Enjoy clean energy and dependable power.
           </p>
 
           <div className="hero-buttons">
-            <a href="#contact" className="primary-btn">
+            <a href="#contact" className="btn btn-primary">
               Get a Quote
             </a>
 
-            <a href="#projects" className="secondary-btn">
+            <a href="#projects" className="btn btn-secondary">
               View Our Projects
             </a>
           </div>
-
-        </div>
-
-        <div className="hero-image">
-          <img
-            src="/solar images/rr.jpg"
-            alt="Solar panels installed on a building"
-          />
         </div>
       </section>
 
+      <section className="intro">
+        <h2>Welcome to Solar Company</h2>
 
-      {/* Introduction Section */}
-      <section className="intro-section">
-
-        <div className="section-heading">
-          <p>OUR SOLAR SOLUTIONS</p>
-
-          <h2>
-            Reliable Energy for a
-            <span> Better Future</span>
-          </h2>
-
-          <p>
-            We design and install quality solar power systems that help
-            homes and businesses reduce electricity costs and enjoy
-            dependable power.
-          </p>
-        </div>
-
+        <p>
+          We specialize in solar installation,
+          battery systems, and maintenance services
+          to provide reliable and affordable energy.
+        </p>
       </section>
-
-    </main>
+    </>
   );
-};
+}
 
 export default Home;

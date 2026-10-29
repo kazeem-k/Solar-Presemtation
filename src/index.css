@@ -135,182 +135,148 @@ body {
 
 /* =========================
    HERO SECTION
-========================= */
+=
+  ======================== */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #172033;
+}
+
+/* Home hero section */
 .hero {
   min-height: 90vh;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 70px 30px;
-
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 50px;
+  padding: 80px 8%;
+
+  
+background-image:
+  linear-gradient(
+    90deg,
+    rgba(5, 20, 38, 0.88) 0%,
+    rgba(5, 20, 38, 0.60) 45%,
+    rgba(5, 20, 38, 0.15) 100%
+  ),
+  url("https://images.pexels.com/photos/9875418/pexels-photo-9875418.jpeg?auto=compress&cs=tinysrgb&w=2000");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
 .hero-content {
-  flex: 1;
+  max-width: 650px;
+  color: white;
 }
 
-.hero-subtitle {
-  color: #f5a623;
+.subtitle {
+  color: #facc15;
   font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-weight: bold;
+  letter-spacing: 3px;
   margin-bottom: 20px;
 }
 
-.hero h1 {
-  font-size: 55px;
-  line-height: 1.1;
-  color: #222;
-  margin-bottom: 25px;
+.hero-content h1 {
+  font-size: clamp(38px, 5vw, 60px);
+  line-height: 1.15;
+  margin-bottom: 20px;
 }
 
-.hero h1 span {
-  color: #f5a623;
-  display: block;
-}
-
-.hero-text {
-  max-width: 550px;
-  color: #666;
+.hero-content p:not(.subtitle) {
   font-size: 17px;
-  line-height: 1.7;
-  margin-bottom: 30px;
+  line-height: 1.8;
+  margin-bottom: 28px;
 }
-
-/* =========================
-   HERO BUTTONS
-========================= */
 
 .hero-buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
-  align-items: center;
 }
 
-.primary-btn,
-.secondary-btn {
-  text-decoration: none;
+.btn {
+  display: inline-block;
   padding: 14px 24px;
-  border-radius: 6px;
-  font-weight: 600;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
   transition: 0.3s;
 }
 
-.primary-btn {
-  background-color: #f5a623;
+.btn-primary {
+  background-color: #facc15;
+  color: #172033;
+  border: 2px solid #facc15;
+}
+
+.btn-primary:hover {
+  background-color: #eab308;
+}
+
+.btn-secondary {
   color: white;
+  border: 2px solid white;
 }
 
-.primary-btn:hover {
-  background-color: #d98b00;
+.btn-secondary:hover {
+  background-color: white;
+  color: #172033;
 }
 
-.secondary-btn {
-  border: 2px solid #f5a623;
-  color: #f5a623;
-}
-
-.secondary-btn:hover {
-  background-color: #f5a623;
-  color: white;
-}
-
-/* =========================
-   HERO IMAGE
-========================= */
-
-.hero-image {
-  flex: 1;
-}
-
-.hero-image img {
-  width: 100%;
-  height: 480px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-/* =========================
-   INTRODUCTION SECTION
-========================= */
-
-.intro-section {
-  padding: 80px 30px;
-  background-color: #f8f8f8;
+/* Introduction section */
+.intro {
+  padding: 70px 8%;
   text-align: center;
+  background-color: #f8fafc;
 }
 
-.section-heading {
+.intro h2 {
+  color: #14532d;
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+
+.intro p {
   max-width: 750px;
-  margin: 0 auto;
+  margin: auto;
+  color: #555;
+  line-height: 1.8;
 }
 
-.section-heading > p:first-child {
-  color: #f5a623;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 15px;
-}
-
-.section-heading h2 {
-  font-size: 38px;
-  color: #222;
-  margin-bottom: 20px;
-}
-
-.section-heading h2 span {
-  color: #f5a623;
-}
-
-.section-heading p:last-child {
-  color: #666;
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
-
+/* Mobile screen */
 @media (max-width: 768px) {
-
   .hero {
-    flex-direction: column;
-    padding: 50px 20px;
-    text-align: center;
+    min-height: 75vh;
+    padding: 60px 6%;
   }
 
-  .hero h1 {
-    font-size: 40px;
-  }
-
-  .hero-text {
-    margin: 0 auto 25px;
+  .hero-content h1 {
+    font-size: 38px;
   }
 
   .hero-buttons {
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .hero-image {
-    width: 100%;
-  }
-
-  .hero-image img {
-    height: 350px;
-  }
-
-  .section-heading h2 {
-    font-size: 30px;
+  .intro {
+    padding: 50px 6%;
   }
 }
+
+
 
 
 /* =========================

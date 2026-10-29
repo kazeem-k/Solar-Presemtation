@@ -22,7 +22,7 @@ const Projects = () => {
         <div className="project-card">
           <div className="project-image">
             <img
-              src="/images/project-1.jpg"
+              src="/images/.jpg"
               alt="Residential solar installation"
             />
           </div>
@@ -76,7 +76,7 @@ const Projects = () => {
         <div className="project-card">
           <div className="project-image">
             <img
-              src="/images/project-3.jpg"
+              src="/images/solar5.jpg"
               alt="Large solar power installation"
             />
           </div>
@@ -103,7 +103,7 @@ const Projects = () => {
         <div className="project-card">
           <div className="project-image">
             <img
-              src="/solar images/project-4.jpg"
+              src="/solar images/solar project 3.jpg"
               alt="Solar installation project"
             />
           </div>

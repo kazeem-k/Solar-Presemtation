@@ -21,7 +21,8 @@ const Contact = () => {
         {/* Contact Information */}
         <div className="contact-info">
 
-          <h3>Get In Touch</h3>
+          <h3>Get In Touch</h3>00
+           
 
           <p>
             We are ready to answer your questions and help you
